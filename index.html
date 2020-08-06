@@ -11,15 +11,21 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Portfolio.json", {onProgress: UnityProgress});
     </script>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
   </head>
   <body>
+  <div class="container">
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div id="gameContainer" style="width: 100%; height: 100%"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">Portfolio</div>
       </div>
     </div>
+  </div>
   </body>
 </html>
